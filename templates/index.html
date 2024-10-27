@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Generation with Llama</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        /* CSS for body and main container */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure full height */
+            margin: 0;
+        }
+
+        .main-container {
+            flex: 1; /* Allow the main container to grow */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+        }
+
+        /* Additional CSS for the footer */
+        .footer {
+            background-color: transparent; /* Fully transparent background */
+            padding: 20px;
+            text-align: center;
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%; /* Round shape */
+            overflow: hidden;
+            margin: 0 auto;
+            border: 2px solid #333; /* Optional border */
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: auto;
+        }
+
+        .role {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #030303; /* Color for role text */
+        }
+
+        /* Existing styles (optional) */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #generated-code-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <img src='/static/css/logo.jpg' alt="Logo" class="logo">
+            <h1>AI Text Generator</h1>
+        </header>
+        <div class="container">
+            <textarea id="prompt" placeholder="Enter your prompt here..."></textarea>
+            <button id="generate-btn">
+                <span class="button-text">Generate</span>
+                <span class="loading-spinner" style="display: none;"></span> <!-- Spinner for loading animation -->
+            </button>
+            
+            <div id="generated-code-container"> <!-- Section for generated code -->
+                <h2>Generated Text:</h2>
+                <pre id="generated-code"></pre> <!-- Element to display generated code -->
+            </div>
+            <div id="response-container"></div> <!-- Section for response -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="profile-container">
+            <div class="profile-pic">
+                <img src='/static/css/parthib.jpg' alt="Profile Picture"> <!-- Backend developer profile picture -->
+            </div>
+            <div class="role"><strong>Backend Developer</strong></div>
+            <div class="github-link">
+                <a href="https://github.com/Parthibkarak71" target="_blank">
+                    <img src='https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png' alt="GitHub Logo" class="github-logo"> <!-- GitHub logo -->
+                </a>
+            </div>
+        </div>
+        <div class="profile-container">
+            <div class="profile-pic">
+                <img src='/static/css/agnik.jpg' alt="Profile Picture"> <!-- Frontend developer profile picture -->
+            </div>
+            <div class="role"><strong>Frontend Developer</strong></div>
+            <div class="github-link">
+                <a href="https://github.com/JISHUBISHI" target="_blank">
+                    <img src='https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png' alt="GitHub Logo" class="github-logo"> <!-- GitHub logo -->
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

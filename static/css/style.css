@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#response-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    text-align: left;
+}
+.main-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#prompt {
+    width: 100%;               /* Make it fill the width of the container */
+    height: 200px;             /* Adjust height as needed */
+    background-color: transparent;  /* Make the background transparent */
+    color: #333;               /* Text color for readability */
+    border: 1px solid #ddd;    /* Border for visibility */
+    padding: 10px;             /* Padding for comfortable typing */
+    font-size: 1.2em;          /* Increase font size for readability */
+    border-radius: 8px;        /* Optional rounded corners */
+    resize: vertical;          /* Allow resizing vertically only */
+    outline: none;             /* Remove default outline on focus */
+}
+
+#prompt::placeholder {
+    color: #aaa;               /* Placeholder text color */
+}
+body {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    color: #333;                               /* Text color for readability */
+    font-family: Arial, sans-serif;            /* Font for the page */
+    margin: 0;                                 /* Remove default margin */
+    padding: 0;                                /* Remove default padding */
+    display: flex;                             /* Use flexbox for centering */
+    justify-content: center;                   /* Center horizontally */
+    align-items: center;                       /* Center vertically */
+    height: 100vh;                            /* Full viewport height */
+}
+
+.main-container {
+    text-align: center;                        /* Center align text */
+    padding: 20px;                            /* Padding around the container */
+    border-radius: 10px;                       /* Rounded corners for main container */
+}
+
+.container {
+    margin: 0 auto;                            /* Center the inner container */
+    width: 80%;                                /* Width of the inner container */
+    max-width: 600px;                          /* Maximum width */
+    padding: 20px;                             /* Padding around the inner container */
+    border: 1px solid #ddd;                    /* Border for the inner container */
+    border-radius: 8px;                        /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+#prompt {
+    width: 100%;                               /* Full width of the container */
+    height: 200px;                             /* Height of the textarea */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background for textarea */
+    color: #333;                               /* Text color for readability */
+    border: 1px solid #ddd;                    /* Border for visibility */
+    padding: 10px;                             /* Padding for comfortable typing */
+    font-size: 1.2em;                          /* Font size for readability */
+    border-radius: 8px;                        /* Optional rounded corners */
+    resize: vertical;                          /* Allow vertical resizing */
+    outline: none;                             /* Remove default outline on focus */
+}
+
+#prompt::placeholder {
+    color: #aaa;                               /* Placeholder text color */
+}
+#prompt {
+    width: 100%;                               /* Full width of the container */
+    height: 100px;                             /* Reduced height for the textarea */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background for textarea */
+    color: #333;                               /* Text color for readability */
+    border: 1px solid #ddd;                    /* Border for visibility */
+    padding: 10px;                             /* Padding for comfortable typing */
+    font-size: 1em;                            /* Adjust font size if needed */
+    border-radius: 8px;                        /* Optional rounded corners */
+    resize: vertical;                          /* Allow vertical resizing */
+    outline: none;                             /* Remove default outline on focus */
+}
+
+#prompt::placeholder {
+    color: #aaa;                               /* Placeholder text color */
+}
+#generated-code-container {
+    margin-top: 20px;                          /* Space above the generated code section */
+    padding: 10px;                             /* Padding for the container */
+    border: 1px solid #ddd;                    /* Border for visibility */
+    border-radius: 8px;                        /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+}
+
+#generated-code {
+    white-space: pre-wrap;                     /* Preserve whitespace for code */
+    overflow-x: auto;                          /* Enable horizontal scrolling if needed */
+    color: #333;                               /* Text color for readability */
+}
+body {
+    background-image: url('/static/css/background.jpg'); /* Replace with your image path */
+    background-size: cover;                   /* Cover the entire viewport */
+    background-position: center;              /* Center the background image */
+    background-repeat: no-repeat;             /* Prevent repeating the image */
+    color: #333;                              /* Text color for readability */
+    font-family: Arial, sans-serif;           /* Font for the page */
+    margin: 0;                                /* Remove default margin */
+    padding: 0;                               /* Remove default padding */
+    display: flex;                            /* Use flexbox for centering */
+    justify-content: center;                  /* Center horizontally */
+    align-items: center;                      /* Center vertically */
+    height: 100vh;                           /* Full viewport height */
+}
+
+.main-container {
+    text-align: center;                       /* Center align text */
+    padding: 20px;                           /* Padding around the container */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional white background for better contrast */
+    border-radius: 10px;                      /* Rounded corners for main container */
+}
+
+body {
+    background-image: url('/static/css/background.jpg'); /* Background image */
+    background-size: cover;                   /* Cover the entire viewport */
+    background-position: center;              /* Center the background image */
+    background-repeat: no-repeat;             /* Prevent repeating the image */
+    color: #333;                              /* Text color for readability */
+    font-family: 'Arial', sans-serif;         /* Font for the page */
+    margin: 0;                                /* Remove default margin */
+    padding: 0;                               /* Remove default padding */
+    display: flex;                            /* Use flexbox for centering */
+    justify-content: center;                  /* Center horizontally */
+    align-items: center;                      /* Center vertically */
+    height: 100vh;                           /* Full viewport height */
+}
+
+.main-container {
+    text-align: center;                       /* Center align text */
+    padding: 40px;                           /* Increased padding around the container */
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 15px;                      /* Rounded corners for main container */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 800px;                         /* Maximum width of the container */
+    width: 90%;                               /* Full width up to the maximum */
+}
+
+h1 {
+    font-size: 2.5em;                         /* Larger font size for the heading */
+    margin-bottom: 20px;                      /* Space below the heading */
+    color: #0a0a0a;                           /* Attractive blue color */
+}
+
+.container {
+    display: flex;                            /* Flexbox for arranging items */
+    flex-direction: column;                   /* Stack items vertically */
+    gap: 15px;                                /* Space between items */
+}
+
+#prompt {
+    width: 100%;                               /* Full width of the container */
+    height: 120px;                            /* Increased height for the textarea */
+    background-color: rgba(221, 227, 228, 0.8); /* Semi-transparent background for textarea */
+    color: #333;                              /* Text color for readability */
+    border: 2px solid #00060c;                /* Border with attractive blue color */
+    border-radius: 8px;                       /* Rounded corners */
+    padding: 10px;                            /* Padding for comfortable typing */
+    font-size: 1.2em;                         /* Larger font size for input */
+    resize: vertical;                         /* Allow vertical resizing */
+    outline: none;                            /* Remove default outline on focus */
+}
+
+#generate-btn {
+    background-color: #0a0a0a;               /* Attractive blue button */
+    color: white;                             /* White text on button */
+    border: none;                             /* Remove border */
+    border-radius: 5px;                      /* Rounded corners */
+    padding: 10px 20px;                      /* Padding for button */
+    font-size: 1.2em;                         /* Increase font size */
+    cursor: pointer;                          /* Pointer cursor on hover */
+    transition: background-color 0.3s;       /* Smooth background color transition */
+}
+
+#generate-btn:hover {
+    background-color: #0056b3;                /* Darker blue on hover */
+}
+
+#generated-code-container {
+    margin-top: 20px;                         /* Space above the generated code section */
+    padding: 15px;                            /* Padding for the container */
+    border: 2px solid #007BFF;                /* Border with attractive blue color */
+    border-radius: 8px;                       /* Rounded corners */
+    background-color: rgba(87, 7, 7, 0.8); /* Semi-transparent background */
+    max-height: 200px;                        /* Limit the height of the section */
+    overflow-y: auto;                         /* Enable vertical scrolling if needed */
+    opacity: 0;                               /* Initial opacity for animation */
+    transform: translateY(-20px);             /* Initial position for animation */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animation effect */
+}
+
+#generated-code {
+    white-space: pre-wrap;                    /* Preserve whitespace for code */
+    overflow-x: auto;                         /* Enable horizontal scrolling if needed */
+    color: #333;                              /* Text color for readability */
+    margin: 0;                                /* Remove default margin */
+}
+#generated-code-container {
+    margin-top: 20px;                         /* Space above the generated code section */
+    padding: 15px;                            /* Padding for the container */
+    border: 2px solid #007BFF;                /* Border with attractive blue color */
+    border-radius: 8px;                       /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    max-height: 200px;                        /* Limit the height of the section */
+    overflow-y: auto;                         /* Enable vertical scrolling if needed */
+    opacity: 0;                               /* Initial opacity for animation */
+    transform: translateY(-20px);            /* Initial position for animation */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animation effect */
+}
+
+#response-container {
+    margin-top: 20px;                         /* Space above the response section */
+}
+header {
+    position: relative;                      /* Allow positioning of logo */
+    display: flex;                          /* Use flexbox for alignment */
+    align-items: center;                    /* Center items vertically */
+    justify-content: space-between;         /* Space between items */
+}
+
+.logo {
+    width: 50px;                            /* Set width for logo */
+    height: 50px;                           /* Set height for logo */
+    border-radius: 50%;                     /* Make logo round */
+    object-fit: cover;                      /* Ensure logo fits within the circle */
+    position: absolute;                     /* Position logo absolutely */
+    top: 20px;                              /* Distance from the top */
+    right: 20px;                            /* Distance from the right */
+    border: 2px solid #007BFF;             /* Optional: border for logo */
+    background-color: white;                /* Optional: background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: shadow for depth */
+    animation: pulse 1.5s infinite;        /* Add animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);               /* Initial size */
+    }
+    50% {
+        transform: scale(1.1);             /* Scale up slightly */
+    }
+    100% {
+        transform: scale(1);               /* Return to original size */
+    }
+}
+
+
+.footer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the content horizontally */
+    padding: 20px; /* Add padding */
+    background-color: transparent; /* Keep the footer transparent */
+}
+
+.profile-container {
+    display: flex; /* Use flexbox for each profile container */
+    align-items: center; /* Align items vertically */
+    margin: 0 15px; /* Space between profiles */
+}
+
+.profile-pic {
+    width: 80px; /* Adjust width as necessary */
+    height: 80px; /* Adjust height as necessary */
+    border-radius: 50%; /* Round shape */
+    overflow: hidden;
+    border: 2px solid #333; /* Optional border */
+}
+
+.profile-pic img {
+    width: 100%; /* Make image fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.role {
+    margin-left: 10px; /* Space between image and text */
+    font-size: 18px; /* Font size */
+    color: #555; /* Color for role text */
+    font-weight: bold; /* Make text bold */
+}
+.github-link {
+    margin-top: 5px; /* Space above the GitHub link */
+}
+
+.github-logo {
+    width: 24px; /* Adjust width as necessary */
+    height: 24px; /* Adjust height as necessary */
+}
+.github-link {
+    margin-top: 5px; /* Space above the GitHub link */
+    text-align: center; /* Center the logo */
+}
+
+.github-logo {
+    width: 40px; /* Adjust width as necessary */
+    height: 40px; /* Adjust height as necessary */
+    border-radius: 50%; /* Make the logo round */
+    background-color: white; /* Optional: add a white background for visibility */
+    padding: 5px; /* Optional: padding around the logo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: add shadow for depth */
+    display: inline-block; /* Ensure the logo behaves like a block */
+}
+.loading-spinner {
+    border: 3px solid rgba(255, 255, 255, 0.5); /* Light color for the spinner */
+    border-top: 3px solid white; /* White color for the top part of the spinner */
+    border-radius: 50%; /* Make it round */
+    width: 20px; /* Width of the spinner */
+    height: 20px; /* Height of the spinner */
+    animation: spin 1s linear infinite; /* Spin animation */
+    margin-left: 10px; /* Space between text and spinner */
+    display: inline-block; /* Keep it inline with text */
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
