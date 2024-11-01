@@ -18,7 +18,7 @@ This is a simple Flask web application that generates text based on user prompts
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/babaiii07/text-generation.git
    cd <repository-directory>
 
 
